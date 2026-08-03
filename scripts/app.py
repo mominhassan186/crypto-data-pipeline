@@ -1,8 +1,12 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
 
-DATABASE_URL = "postgresql://postgres:ui/ux1@localhost:5432/crypto_pipeline"
+DATABASE_URL = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
 
 engine = create_engine(DATABASE_URL)
 

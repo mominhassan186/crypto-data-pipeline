@@ -10,7 +10,7 @@ connection = psycopg2.connect(
     host="localhost",
     database="crypto_pipeline",
     user="postgres",
-    password="ui/ux1"
+    password="YOUR_PASSWORD"
 )
 
 cursor = connection.cursor()
