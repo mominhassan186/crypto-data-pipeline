@@ -91,12 +91,6 @@ streamlit run app.py
 
 ---
 
-## 📸 Dashboard
-
-(Add a screenshot after deployment.)
-
----
-
 ## 📈 Future Improvements
 
 - Scheduled data collection using Airflow or Cron
